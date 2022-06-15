@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "Polyphony"
+version = "2.0"
+description = "A more robust version of PluralKit"
+authors = ["Kiera Saltz <hello@kierasaltz.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+"discord.py" = { git = "https://github.com/Rapptz/discord.py.git" }
+python-dotenv = "^0.20.0"
+requests = "^2.27.1"
+emoji = "^1.7.0"
+GitPython = "^3.1.27"
+ZODB = "^5.7.0"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.960"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
