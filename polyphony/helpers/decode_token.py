@@ -8,6 +8,6 @@ log = logging.getLogger(__name__)
 
 def decode_token(token: str):
     token = token.split(".")
-    if DEBUG is TRUE:
+    if DEBUG is True:
         log.info(string(base64.b64decode(token[0])))
     return int(base64.b64decode(token[0]))
